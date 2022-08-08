@@ -48,6 +48,17 @@ h1, h2, h3{
 ul {
     color: #ffffff;}
     
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item-link{
+	margin-right: 10px
+}
+
 img {
-    overflow: scroll;}
-    
+	width:100%;
+	overflow: scroll;
+}

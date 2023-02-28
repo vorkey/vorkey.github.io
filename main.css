@@ -1,19 +1,32 @@
-body {
-    font-family: sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #373E4D;
-    max-width: 80%;
-    align-items: center;
+}
+
+:root {
+    --dark: #373E4D;
+    --light: #fff;
+    --lightBlue: #63C5EA;
+}
+body {
+    font-family: sans-serif;
+    /* background-color: var(--dark); */
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    max-width: 512px;
+    margin: auto;
+    margin-bottom: 50px;
 }
     
 p {
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    /* color: #ffffff; */
+    border: 1px solid var(--dark);
     padding: 10px;
     margin:10px;
     text-align: center;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
     
 #right {
     text-align: right;}
@@ -41,7 +54,7 @@ a:focus{
     color: #ffffff;}
     
 h1, h2, h3{
-    color: #63C5EA;
+    color: var(--light);
     background-color: #555B68;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
@@ -64,6 +77,10 @@ ul {
 img {
 	width:100%;
 	overflow: scroll;
+}
+
+#main {
+    text-align: left;
 }
 
 /* Grayish Purple (Base color): #8B79B1
